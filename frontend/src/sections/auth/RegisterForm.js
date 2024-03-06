@@ -50,6 +50,7 @@ export default function AuthRegisterForm() {
   const onSubmit = async (data) => {
     try {
       // submit data to backend
+      console.log(data);
       dispatch(RegisterUser(data));
     } catch (error) {
       console.error(error);
